@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="buyerPane" prefHeight="567.03" prefWidth="1228.0" style="-fx-background-color: #262626; -fx-background-radius: 20; -fx-border-radius: 20;" stylesheets="@../css/stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.sellingLk.controller.BuyerManageFormController">
+   <children>
+      <Label layoutX="41.0" layoutY="14.0" styleClass="title" text="Buyer" />
+      <JFXTextField fx:id="txtName" focusColor="#b1f041" labelFloat="true" layoutX="57.0" layoutY="132.0" onAction="#txtNameOnAction" onKeyReleased="#txtNameKeyRealeased" prefHeight="44.0" prefWidth="200.0" promptText="Name" styleClass="textBoxInManage" unFocusColor="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEmail" focusColor="#b1f041" labelFloat="true" layoutX="435.0" layoutY="132.0" onAction="#txtEmailOnAction" onKeyReleased="#txtEmailKeyRealesed" prefHeight="44.0" prefWidth="150.0" promptText="Email" styleClass="textBoxInManage" unFocusColor="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtAddress" focusColor="#b1f041" labelFloat="true" layoutX="599.0" layoutY="132.0" onAction="#txtAddressOnAction" onKeyReleased="#txtAddressKeyReleased" prefHeight="44.0" prefWidth="163.0" promptText="Address" styleClass="textBoxInManage" unFocusColor="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXComboBox fx:id="cmbLoyalId" focusColor="#b1f041" labelFloat="true" layoutX="951.0" layoutY="132.0" onAction="#cmbLoyalIdOnAction" prefHeight="44.0" prefWidth="130.0" promptText="Loyal Id" styleClass="textBoxInManage" unFocusColor="WHITE" />
+      <JFXButton layoutX="1101.0" layoutY="140.0" onAction="#btnSaveOnAction" prefHeight="37.0" prefWidth="85.0" styleClass="loginbtn" text="Save" textFill="#b1f041" />
+      <JFXTextField fx:id="txtPhone" focusColor="#b1f041" labelFloat="true" layoutX="776.0" layoutY="132.0" onAction="#txtPhoneOnAction" onKeyReleased="#txtPhoneKeyReleased" prefHeight="44.0" prefWidth="163.0" promptText="Phone" styleClass="textBoxInManage" unFocusColor="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <Pane layoutX="41.0" layoutY="224.0" prefHeight="322.0" prefWidth="1152.0" style="-fx-background-color: #ffff; -fx-background-radius: 20;">
+         <children>
+            <Text fill="#534d59" layoutX="17.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins" text="Buyer ID" wrappingWidth="109.50004425844395" />
+            <ScrollPane layoutX="10.0" layoutY="53.0" prefHeight="223.0" prefWidth="1134.0">
+               <content>
+                  <VBox fx:id="vBox" prefHeight="221.0" prefWidth="1134.0" style="-fx-background-color: #ffff;" />
+               </content>
+            </ScrollPane>
+            <Text fill="#534d59" layoutX="280.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins" text="Email" wrappingWidth="53.50004327297211" />
+            <Text fill="#534d59" layoutX="660.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins" text="Phone" wrappingWidth="109.5000432729721" />
+            <Text fill="#534d59" layoutX="462.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins" text="Address" wrappingWidth="109.5000432729721" />
+            <Text fill="#534d59" layoutX="110.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins" text="Name" wrappingWidth="109.50004425844395" />
+            <Text fill="#534d59" layoutX="907.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins" text="Loyal ID" wrappingWidth="109.5000432729721" />
+            <Text fill="#534d59" layoutX="775.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins" text="Nic" wrappingWidth="109.5000432729721" />
+         </children>
+         <stylesheets>
+            <URL value="@../css/text.css" />
+            <URL value="@../css/Scrool.css" />
+         </stylesheets>
+      </Pane>
+      <JFXButton layoutX="185.0" layoutY="47.0" onAction="#btnSellerManageOnAction" prefHeight="31.0" prefWidth="130.0" style="-fx-text-fill: #B1F041;" text="Seller Manage" />
+      <JFXTextField fx:id="txtNic" focusColor="#b1f041" labelFloat="true" layoutX="272.0" layoutY="132.0" onAction="#txtNicOnACtion" onKeyReleased="#txtNicKeyRealeased" prefHeight="44.0" prefWidth="150.0" promptText="NIC" styleClass="textBoxInManage" unFocusColor="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

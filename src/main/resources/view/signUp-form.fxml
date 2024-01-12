@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="348.0" prefWidth="544.0" style="-fx-background-color: #262626;" stylesheets="@../css/stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.sellingLk.controller.SignUpFormController">
+   <children>
+      <Pane fx:id="signUpPane" layoutY="-1.0" prefHeight="348.0" prefWidth="544.0">
+         <children>
+            <Pane fx:id="usernamePane" layoutX="63.0" layoutY="76.0" prefHeight="200.0" prefWidth="200.0" styleClass="textBox">
+               <children>
+                  <JFXTextField fx:id="txtUsername" alignment="CENTER" focusColor="#ffffff00" labelFloat="true" layoutX="26.0" layoutY="-2.0" prefHeight="40.0" prefWidth="372.0" promptText="Enter Your Username here" unFocusColor="#4d4d4d00">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXTextField>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="6.5" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons/icons8-user-96.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="emailPane" layoutX="63.0" layoutY="137.0" prefHeight="200.0" prefWidth="200.0" styleClass="textBox">
+               <children>
+                  <JFXTextField fx:id="txtEmail" alignment="CENTER" focusColor="#ffffff00" labelFloat="true" layoutX="23.0" prefHeight="36.0" prefWidth="372.0" promptText="Enter Your Email here" unFocusColor="#4d4d4d00">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXTextField>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="6.5" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons/icons8-mail-96.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane fx:id="otpPane" layoutX="64.0" layoutY="204.0" prefHeight="200.0" prefWidth="200.0">
+               <styleClass>
+                  <String fx:value="textBox" />
+                  <String fx:value="otpBox" />
+               </styleClass>
+               <children>
+                  <JFXTextField fx:id="txtOtp" alignment="CENTER" focusColor="#ffffff00" labelFloat="true" layoutX="23.0" prefHeight="37.0" prefWidth="187.0" promptText="Enter OTP" unFocusColor="#4d4d4d00">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXTextField>
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="6.5" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/icons/icons8-key-96.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <JFXButton fx:id="btnSendOtp" layoutX="315.0" layoutY="204.0" onAction="#btnSendOtpOnAction" prefHeight="37.0" prefWidth="166.0" styleClass="loginbtn" text="Send OTP" />
+            <JFXButton layoutX="63.0" layoutY="283.0" onAction="#btnNextOnAction" prefHeight="37.0" prefWidth="418.0" styleClass="loginbtn" text="Next" />
+            <Label fx:id="lblWarning" layoutX="78.0" layoutY="249.0" prefHeight="21.0" prefWidth="330.0" text="Please EnterValid Details" textFill="#fa5252" visible="false">
+               <font>
+                  <Font size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

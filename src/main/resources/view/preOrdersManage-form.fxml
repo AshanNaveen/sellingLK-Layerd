@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="567.03" prefWidth="1228.0" style="-fx-background-color: #262626; -fx-background-radius: 20;" stylesheets="@../css/stylesheet.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.sellingLk.controller.PreOrderFormController">
+   <children>
+      <Label layoutX="20.0" layoutY="8.0" styleClass="title" text="Pre Orders" />
+      <JFXTextField fx:id="txtBrand" focusColor="#b1f041" labelFloat="true" layoutX="50.0" layoutY="131.0" onAction="#txtBrandOnAction" onKeyReleased="#txtBrandkeyPressed" prefHeight="44.0" prefWidth="195.0" promptText="Brand" styleClass="textBoxInManage" unFocusColor="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <VBox layoutX="38.0" layoutY="222.0" prefHeight="326.0" prefWidth="1155.0" />
+      <JFXButton layoutX="1063.0" layoutY="129.0" onAction="#btnSaveOnAction" prefHeight="54.0" prefWidth="110.0" style="-fx-font-size: 24;" styleClass="loginbtn" text="Save" textFill="#b1f041" />
+      <Pane layoutX="39.0" layoutY="228.0" prefHeight="322.0" prefWidth="1152.0" style="-fx-background-color: #ffff; -fx-background-radius: 20;">
+         <children>
+            <Text fill="#534d59" layoutX="15.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins" text="Pre Order Id" wrappingWidth="109.50004425844395" />
+            <ScrollPane layoutX="10.0" layoutY="53.0" prefHeight="223.0" prefWidth="1134.0">
+               <content>
+                  <VBox fx:id="vBox" prefHeight="221.0" prefWidth="1134.0" style="-fx-background-color: #ffff;" />
+               </content>
+            </ScrollPane>
+            <Text fill="#534d59" layoutX="414.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins" text="Year" wrappingWidth="53.50004327297211" />
+            <Text fill="#534d59" layoutX="867.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins" text="Is Completed" wrappingWidth="109.5000432729721" />
+            <Text fill="#534d59" layoutX="551.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins" text="Buyer Name" wrappingWidth="109.5000432729721" />
+            <Text fill="#534d59" layoutX="158.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins" text="Brand" wrappingWidth="109.50004425844395" />
+            <Text fill="#534d59" layoutX="703.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins" text="Date" textAlignment="CENTER" wrappingWidth="109.5000432729721" />
+            <Text fill="#534d59" layoutX="282.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="Poppins" text="Model" wrappingWidth="109.50004425844395" />
+         </children>
+         <stylesheets>
+            <URL value="@../css/Scrool.css" />
+            <URL value="@../css/text.css" />
+         </stylesheets>
+      </Pane>
+      <JFXTextField fx:id="txtYear" focusColor="#b1f041" labelFloat="true" layoutX="480.0" layoutY="131.0" onAction="#txtYearOnAction" onKeyReleased="#txtYearKeyPressed" prefHeight="44.0" prefWidth="121.0" promptText="Year" styleClass="textBoxInManage" unFocusColor="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton layoutX="950.0" layoutY="142.0" onAction="#btnNewBuyerOnAction" prefHeight="31.0" prefWidth="95.0" style="-fx-font-size: 12;" styleClass="loginbtn" text="New Buyer" textFill="#b1f041" />
+      <JFXTextField fx:id="txtBuyerContact" focusColor="#b1f041" labelFloat="true" layoutX="627.0" layoutY="131.0" onAction="#txtContactOnAction" onKeyReleased="#txtContactKeyPressed" prefHeight="44.0" prefWidth="151.0" promptText="Buyer Contact" styleClass="textBoxInManage" unFocusColor="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtModel" focusColor="#b1f041" labelFloat="true" layoutX="265.0" layoutY="131.0" onAction="#txtModelOnAction" onKeyReleased="#txtModelKeyPressed" prefHeight="44.0" prefWidth="195.0" promptText="Model" styleClass="textBoxInManage" unFocusColor="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </JFXTextField>
+      <Label fx:id="txtBuyerName" alignment="CENTER" layoutX="802.0" layoutY="131.0" prefHeight="44.0" prefWidth="131.0" textAlignment="CENTER" />
+      <Label fx:id="lblWarning" layoutX="626.0" layoutY="179.0" prefHeight="21.0" prefWidth="425.0" text="This buyer not in a database you can add new seller using new Buyer button !" textFill="#ff4d4d" visible="false">
+         <font>
+            <Font size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
